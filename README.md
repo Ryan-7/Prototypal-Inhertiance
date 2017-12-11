@@ -10,7 +10,7 @@ var obj = {};
 // console.log(arr);
 // console.log(obj);
 
-// When JS can't find a method on the object, it will go up the prototype chain and look at its prototype to try to find it. 
+// When JS can't find a property or method on the object, it will go up the prototype chain and look at its prototype to try to find it. 
 
 // Which is why we can use array.push(); for example. 
 
