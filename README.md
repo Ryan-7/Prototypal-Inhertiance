@@ -16,7 +16,7 @@ var obj = {};
 
 // Constructor function 
 function Person(firstname, lastname) {
-	console.log(this); // Empty object created by 'new,' this' points to here and object is returned
+  console.log(this); // Empty object created by 'new,' this' points to here and object is returned
   this.firstname = firstname;
   this.lastname = lastname;
 }
