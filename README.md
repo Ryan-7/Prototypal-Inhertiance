@@ -14,7 +14,12 @@ var obj = {};
 
 // Which is why we can use someArray.push() on any array for example, as arrays are objects and have a prototype.
 
-// Constructor function 
+// Constructor function
+// The 'new' keyword serves several important functions:
+// 1) It will create an empty Object
+// 2) 'this' will now point to the empty object
+// 3) The object will automitically be returned 
+
 function Person(firstname, lastname) {
   console.log(this); // Empty object created by 'new,' this' points to here and object is returned
   this.firstname = firstname;
