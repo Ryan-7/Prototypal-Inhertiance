@@ -12,7 +12,7 @@ var obj = {};
 
 // When JS can't find a property or method on the object, it will go up the prototype chain and look at its prototype to try to find it. 
 
-// Which is why we can use array.push(); for example. 
+// Which is why we can use someArray.push() on any array for example, as arrays are objects and have a prototype.
 
 // Constructor function 
 function Person(firstname, lastname) {
