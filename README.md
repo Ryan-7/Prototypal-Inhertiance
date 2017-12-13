@@ -39,6 +39,7 @@ console.log(john);
 
 
 An empty object exists on all functions called prototype.
+
 When objects are created from a constructor function, this is those objects' prototype:
 ```
 Person.prototype === {} 
@@ -62,6 +63,7 @@ console.log(john.__proto__.__proto__);
 ```
 
 Lastly, JS can use reflection
+
 JS is smart enough to search john's prototype, even though the hasOwnProperty method exists on the prototype of that prototype. 
 
 ```
