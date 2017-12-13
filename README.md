@@ -8,16 +8,16 @@ var func = function(){};
 var arr = [];
 var obj = {};
 
-// console.log(func);
-// console.log(arr);
-// console.log(obj);
+console.log(func);
+console.log(arr);
+console.log(obj);
 
 ```
 
 
 When JS can't find a property or method on the object, it will go up the prototype chain and look at its prototype to try to find it. 
 
-Which is why we can use someArray.push() on any array for example, as arrays are objects and have a prototype.
+Which is why we can use someArray.push() on any array for example, as arrays are objects and have a prototype with these native methods.
 
 Constructor function and 'new'
 
@@ -35,7 +35,9 @@ function Person(firstname, lastname) {
 
 john = new Person('John', 'Doe')
 console.log(john);
+```
 
+```
 // An empty object, exists on all functions called prototype 
 // When objects are created from a constructor function, this is those objects' prototype:
 // Person.prototype
