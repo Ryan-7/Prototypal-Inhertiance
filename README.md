@@ -42,12 +42,13 @@ An empty object exists on all functions called prototype.
 When objects are created from a constructor function, this is those objects' prototype:
 ```
 Person.prototype
+```
+All objects created from that function share the same prototype object, which means because of JS looking down the prototype chain, it will find the method to be used.
+Called differential inheritance because nothing is copied, only 'linked'. 
 
-// All objects created from that function share the same prototype object, which means because of JS looking down the prototype chain, it will find the method to be used.
-// Called differential inheritance because nothing is copied, only 'linked'. 
-Person.prototype.someProp = 'Some Property';
 
-// Proof -- These are the same object: 
+Proof -- These are the same object: 
+```
 console.log(Person.prototype);
 console.log(john.__proto__);
 
