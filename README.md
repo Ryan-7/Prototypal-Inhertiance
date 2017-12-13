@@ -56,13 +56,13 @@ console.log(john.__proto__);
 
 The prototype of Person.prototype is that base object with native methods
 
-Proof
+Proof -- same object. 
 ```
 console.log(Person.prototype.__proto__);
 console.log(john.__proto__.__proto__);
 ```
 
-Lastly, JS can use reflection
+Lastly, JS can use reflection:
 
 JS is smart enough to search john's prototype, even though the hasOwnProperty method exists on the prototype of that prototype. 
 
