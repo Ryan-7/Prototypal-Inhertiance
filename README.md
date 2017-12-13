@@ -1,11 +1,15 @@
 # Prototypal-Inhertiance in my own words
 
+
+Every object has a prototype with native properties and methods
+
 ```
-// Every object has a prototype with native properties and methods
 var func = function(){};
 var arr = [];
 var obj = {};
 
+```
+```
 // console.log(func);
 // console.log(arr);
 // console.log(obj);
