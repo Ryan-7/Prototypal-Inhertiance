@@ -18,7 +18,7 @@ var obj = {};
 // The 'new' keyword serves several important functions:
 // 1) It will create an empty Object
 // 2) 'this' will now point to the empty object
-// 3) The object will automitically be returned 
+// 3) The object will automatically be returned 
 
 function Person(firstname, lastname) {
   console.log(this); // Empty object created by 'new,' this' points to here and object is returned
@@ -41,7 +41,7 @@ Person.prototype.someProp = 'Some Property';
 console.log(Person.prototype);
 console.log(john.__proto__);
 
-// The prototype of Person.prototype is that base object with native method
+// The prototype of Person.prototype is that base object with native methods
 // Proof
 console.log(Person.prototype.__proto__);
 console.log(john.__proto__.__proto__);
