@@ -54,6 +54,7 @@ console.log(john.__proto__);
 ```
 
 The prototype of Person.prototype is that base object with native methods
+
 Proof
 ```
 console.log(Person.prototype.__proto__);
