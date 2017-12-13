@@ -41,7 +41,7 @@ console.log(john);
 An empty object exists on all functions called prototype.
 When objects are created from a constructor function, this is those objects' prototype:
 ```
-Person.prototype
+Person.prototype === {} 
 ```
 All objects created from that function share the same prototype object, which means because of JS looking down the prototype chain, it will find the method to be used.
 Called differential inheritance because nothing is copied, only 'linked'. 
@@ -51,20 +51,27 @@ Proof -- These are the same object:
 ```
 console.log(Person.prototype);
 console.log(john.__proto__);
+```
 
-// The prototype of Person.prototype is that base object with native methods
-// Proof
+The prototype of Person.prototype is that base object with native methods
+Proof
+```
 console.log(Person.prototype.__proto__);
 console.log(john.__proto__.__proto__);
+```
 
-// Lastly, JS can use reflection
-// JS is smart enough to search john's prototype, even though the hasOwnProperty method exists on the prototype of that prototype. 
+Lastly, JS can use reflection
+JS is smart enough to search john's prototype, even though the hasOwnProperty method exists on the prototype of that prototype. 
+
+```
+Person.prototype.someProp = 'Some Property';
 console.log(john.__proto__.hasOwnProperty('someProp')); // true 
+```
 
-
-// We can use a method that exists on the prototype due to differential inheritance. 
+We can use a method that exists on the prototype due to differential inheritance. 
+```
 console.log(john.toString());
 console.log(john.__proto__.__proto__.hasOwnProperty('toString')); // true
-
+```
 
 ```
