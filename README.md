@@ -15,11 +15,11 @@ console.log(obj);
 ```
 
 
-When JS can't find a property or method on the object, it will go up the prototype chain and look at its prototype to try to find it. 
+When JS can't find a property or method on the object, it will go up the **prototype chain** and look at its prototype to try to find it. 
 
 Which is why we can use someArray.push() on any array for example, as arrays are objects and have a prototype with these native methods.
 
-Constructor function and 'new'
+**Constructor function and 'new'**
 
 The 'new' keyword serves several important functions:
 1) It will create an empty Object
@@ -37,10 +37,11 @@ john = new Person('John', 'Doe')
 console.log(john);
 ```
 
+
+An empty object exists on all functions called prototype.
+When objects are created from a constructor function, this is those objects' prototype:
 ```
-// An empty object, exists on all functions called prototype 
-// When objects are created from a constructor function, this is those objects' prototype:
-// Person.prototype
+Person.prototype
 
 // All objects created from that function share the same prototype object, which means because of JS looking down the prototype chain, it will find the method to be used.
 // Called differential inheritance because nothing is copied, only 'linked'. 
