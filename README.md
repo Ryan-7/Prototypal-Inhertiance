@@ -8,22 +8,25 @@ var func = function(){};
 var arr = [];
 var obj = {};
 
-```
-```
 // console.log(func);
 // console.log(arr);
 // console.log(obj);
 
-// When JS can't find a property or method on the object, it will go up the prototype chain and look at its prototype to try to find it. 
+```
 
-// Which is why we can use someArray.push() on any array for example, as arrays are objects and have a prototype.
 
-// Constructor function
-// The 'new' keyword serves several important functions:
-// 1) It will create an empty Object
-// 2) 'this' will now point to the empty object
-// 3) The object will automatically be returned 
+When JS can't find a property or method on the object, it will go up the prototype chain and look at its prototype to try to find it. 
 
+Which is why we can use someArray.push() on any array for example, as arrays are objects and have a prototype.
+
+Constructor function and 'new'
+
+The 'new' keyword serves several important functions:
+1) It will create an empty Object
+2) 'this' will now point to the empty object
+3) The object will automatically be returned 
+
+```
 function Person(firstname, lastname) {
   console.log(this); // Empty object created by 'new,' this' points to here and object is returned
   this.firstname = firstname;
